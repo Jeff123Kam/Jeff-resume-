@@ -1,0 +1,31 @@
+@import './__color';
+header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 500px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: $jiangre-green;
+        }
+
+        button {
+          display: none;
+        }
+
+        @media screen and (max-width:430px){
+            button {
+                display: block;
+            }
+            a {
+                display: none;
+            }
+        }
+    }
+}
