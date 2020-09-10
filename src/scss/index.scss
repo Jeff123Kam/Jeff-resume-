@@ -1,7 +1,19 @@
 @import "navBar";
-@import "home/index.scss";
+@import "./home/index.scss";
 @import "./footer.scss";
 
 html {
     font-size: 62.5%;
+}
+
+body {
+    background-color: gray;
+    -webkit-background-size: cover;    
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
