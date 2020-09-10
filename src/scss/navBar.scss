@@ -1,16 +1,55 @@
 @import './__color';
-header {
+.header {
     margin: 0 auto;
-    max-width: 500px;
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        a {
+    max-width: 1060px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 40rem;
+    margin-top: 3rem;
+    
+    
+    &__logo{
+        float: left;
+        font-size: 2rem;
+        
+        span {
             color: $jiangre-green;
         }
+    }
+
+    nav {
+        align-items: center;
+        
+        a {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: #A8A8A8;
+            font-weight: 70rem;
+            text-decoration: none;
+            padding-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        a::after {
+            content: "";
+            height: 0.2rem;
+            width: 2.4rem;
+            background:$jiangre-green;
+            position: absolute;
+            left: calc(50% - 25%);
+            bottom: 0;
+        }
+    
+        
+
+            
+        
+        a:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+        
 
         button {
           display: none;

@@ -1,0 +1,44 @@
+.header {
+  margin: 0 auto;
+  max-width: 1060px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 40rem;
+  margin-top: 3rem; }
+  .header__logo {
+    float: left;
+    font-size: 2rem; }
+    .header__logo span {
+      color: #2eca7f; }
+  .header nav {
+    align-items: center; }
+    .header nav a {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #A8A8A8;
+      font-weight: 70rem;
+      text-decoration: none;
+      padding-bottom: 1rem;
+      position: relative;
+      display: inline-block; }
+    .header nav a::after {
+      content: "";
+      height: 0.2rem;
+      width: 2.4rem;
+      background: #2eca7f;
+      position: absolute;
+      left: calc(50% - 25%);
+      bottom: 0; }
+    .header nav a:not(:last-child) {
+      margin-right: 3.5rem; }
+    .header nav button {
+      display: none; }
+    @media screen and (max-width: 430px) {
+      .header nav button {
+        display: block; }
+      .header nav a {
+        display: none; } }
+
+html {
+  font-size: 62.5%; }
