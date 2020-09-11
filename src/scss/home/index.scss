@@ -23,6 +23,9 @@
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       background-color: #2eca7f;
+      display: flex;
+      flex-wrap: wrap;
+      
 
       &__myface__photo {
           position: absolute;
@@ -37,12 +40,12 @@
 
       &__introduction {
         margin-left: 55%;
-        margin-top: 8%;
+        margin-top: 10%;
         color: white;
 
         &__Name {
           font-size: 5.4rem;
-          margin-bottom: 0%;
+          
           display: flex;
         }
 
@@ -67,6 +70,7 @@
         top:55%;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        
     }
 
     
