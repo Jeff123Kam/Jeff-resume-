@@ -45,6 +45,17 @@
       .header nav a {
         display: none; } }
 
+.icon1 {
+  list-style: none;
+  display: inline-block;
+  background-color: white;
+  margin-left: 2rem;
+  margin-top: 2rem; }
+
+.icon2 {
+  height: 7rem;
+  width: 7rem; }
+
 .home-container {
   height: 550px;
   max-width: 1040px;
@@ -66,6 +77,30 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: #2eca7f; }
+    .home-container__page-header__myface__photo {
+      position: absolute;
+      height: 28rem;
+      width: 27rem;
+      border: 2px solid grey;
+      margin-left: 5.5rem;
+      margin-top: 5rem;
+      z-index: 10;
+      display: flex; }
+    .home-container__page-header__introduction {
+      margin-left: 55%;
+      margin-top: 8%;
+      color: white; }
+      .home-container__page-header__introduction__Name {
+        font-size: 5.4rem;
+        margin-bottom: 0%;
+        display: flex; }
+      .home-container__page-header__introduction__title {
+        font-size: 1.8rem;
+        font-weight: Medium;
+        margin-left: 4rem;
+        margin-top: 1rem; }
+      .home-container__page-header__introduction__icon {
+        list-style: none; }
   .home-container__page-content {
     position: absolute;
     width: 100%;

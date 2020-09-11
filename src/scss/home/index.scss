@@ -24,8 +24,38 @@
       border-top-right-radius: 15px;
       background-color: #2eca7f;
 
-      &__myface {
+      &__myface__photo {
+          position: absolute;
+          height: 28rem;
+          width: 27rem;
+          border: 2px solid grey;
+          margin-left: 5.5rem;
+          margin-top: 5rem;
+          z-index: 10;
+          display: flex;
+      }
 
+      &__introduction {
+        margin-left: 55%;
+        margin-top: 8%;
+        color: white;
+
+        &__Name {
+          font-size: 5.4rem;
+          margin-bottom: 0%;
+          display: flex;
+        }
+
+        &__title {
+          font-size: 1.8rem;
+          font-weight: Medium;
+          margin-left: 4rem;
+          margin-top: 1rem;
+        }
+
+        &__icon {
+          list-style: none;
+        }
       }
     }
 
@@ -38,4 +68,6 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
+
+    
 }
