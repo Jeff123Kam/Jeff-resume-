@@ -1,7 +1,111 @@
 .resume_content {
+    position: absolute;
+    top: 13%;
     width: 100%;
     height: 87%;
     background-color: white;
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
+.resume_title1 {
+    font-size: 2.1rem;
+    color: black;
+    margin-left: 4rem;
+    margin-top: 0.1rem;
+}
+
+.resume_title2 {
+    font-size: 2.1rem;
+    color: black;
+    
+    margin-top: 0.1rem;
+}
+
+.education {
+    margin-top:4rem;
+}
+
+.vl {
+   height: 14rem;
+   border-left: 1px solid #e0e0e0;
+   margin-left: 4rem;
+   position: relative;
+}
+
+.vl2 {
+    height: 14rem;
+   border-left: 1px solid #e0e0e0;
+   position: relative
+}
+
+.box {
+    height: 12rem;
+    width: 35rem;
+    border-left: 2px solid #2eca7f;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    margin-left: 1.8rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+
+    &__year {
+        color: #2eca7f;
+        font-size: 1.2rem;
+    }
+
+    &_course {
+        position: absolute;
+    }
+
+    &__line {
+         height: 8px;
+         border-left: 1px solid #e0e0e0;
+         margin-left: 1rem;
+         margin-right: 1rem;
+    }
+
+    &__company {
+        font-size: 1.2rem;
+        color: #9e9e9e;
+    }
+
+    &_detail {
+        position: absolute;
+        display: block;
+        margin-top: 4rem;
+    }
+
+    &_content {
+        margin-top: 7rem;
+    }
+}
+
+.box:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -29px;
+    border: 2px solid #2eca7f;
+    z-index: 2;
+}
+
+.box:after{
+    
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background-color: #2eca7f;
+        border-radius: 10px;
+        width: 29px;
+        height: 2px;
+        top: 25px;
+        left: -29px;
+        z-index: 1;
+    
 }
