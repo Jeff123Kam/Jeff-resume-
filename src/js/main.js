@@ -2,17 +2,29 @@
 
 let resumePage
 let homePage
+let servicePage
+let blogPage
+let contactPage
 let allPages
 let pageNavigationMap
 function init() {
      allPages = document.querySelectorAll('main section')
      homePage = document.querySelector('main > section[data-page-xxx="#home"]')
      resumePage = document.querySelector('main > section[data-page-yyy="#resume"]')
+     servicePage = document.querySelector('main > section[data-page-zzz="#services"]')
+     blogPage = document.querySelector('main > section[data-page-ppp="#Blog"]')
+     contactPage = document.querySelector('main > section[data-page-vvv="#Contact"]')
      homePage.style.display = 'block'
      resumePage.style.display = 'none'
+     servicePage.style.display = 'none'
+     blogPage.style.display = 'none'
+     contactPage.style.display = 'none'
      pageNavigationMap = {
         "#home": homePage,
-        "#resume": resumePage
+        "#resume": resumePage,
+        "#services": servicePage,
+        "#Blog": blogPage,
+        "#Contact": contactPage
     }
 }
 function highlightNavButton (navButtons) {
@@ -69,16 +81,15 @@ window.onload = function () {
 };
 
 
-// When the user scrolls the page, execute myFunction
+// scrolls page function
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
+
 var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
