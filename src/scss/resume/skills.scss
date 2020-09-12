@@ -1,0 +1,36 @@
+.skills {
+    margin-top:4rem;
+
+    &_word {
+        color: #2eca7f;
+    }
+}
+
+.bar_container {
+    
+        width: 80%;
+        background-color: #e0e0e0;
+        margin-top: 0%;
+}
+
+.skill{
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.web{
+    width: 60%; background-color: #2eca7f;
+}
+
+.group_skillbar {
+    font-size: 2.1rem;
+    color: black;
+    margin-left: 4rem;
+    margin-top: 0.1rem;
+}
+
+.skills_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
