@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/lib/grid.css">
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="src/lib/fontawesome-free-5.14.0-web/css/all.css">
     <!--<link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
     <title>Document</title>
@@ -15,6 +15,7 @@
  <div>
 
     <!-- this is the nav bar and log header-->
+    <div id="navbar">
     <header class="header">
      <div class="header__logo"> 
         Jeff 
@@ -29,24 +30,27 @@
          <button>Menu</button>
      </nav>
     </header>
+    </div>
 
     <!-- main for card -->
     <main>
+         <!-- home-section -->
         <section data-page-xxx="#home">
             <div class="home-container">
                 <div class="home-container__page-header">
                     <div class="home-container__page-header__myface">
-                        <img src="src/css/Kam-face.PNG" alt="myface" class="home-container__page-header__myface__photo">
+                        <img src="src/assets/Kam-face.PNG" alt="myface" class="home-container__page-header__myface__photo">
                     </div>
                     <div class="home-container__page-header__introduction">
-                        <h1 class="home-container__page-header__introduction__Name">Jeff Kam</h1>
+                        <h1 class="home-container__page-header__introduction__Name">Jeff Kuo</h1>
                         <div class="home-container__page-header__introduction__title">Frontend-developer</div>
                         <div class="home-container__page-header__introduction__icon">
-                           <ul class="home-container__page-header__introduction__icon__soical">
-                               <li class="icon1"><a href="#" class="icon2"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                               <li class="icon1"><a href="#" class="icon2"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                               <li class="icon1"><a href="#" class="icon2"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                           </ul>
+                               <a href="#" class="icon2"><i class="fab fa-twitter"></i></a>
+                               <a href="#" class="icon2"><i class="fab fa-facebook-f"></i></a>
+                               <a href="#" class="icon2"><i class="fab fa-instagram"></i></a>
+                               <!--<li class="icon1"><a href="#" class="icon2"><i class="fa fa-camera-retro"></i></i> </a></li>
+                               <li class="icon1"><a href="#" class="icon2"><i class="fab fa-facebook-f"></i> </a></li>
+                               <li class="icon1"><a href="#" class="icon2"><i class="fab fa-instagram"></i> </a></li>-->
                         </div>
                     </div>
                 </div> 
@@ -91,11 +95,14 @@
                 </div>
             </div>
         </section>
-
+        <!-- resume-section -->
         <section data-page-yyy="#resume">
           <div class="resume-container">
             <div class="resume_header">
                 <h1 class="resume_title">Resume</h1>
+            </div>
+            <div class="resume_content">
+
             </div>
           </div>     
         </section>

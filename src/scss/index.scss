@@ -8,7 +8,6 @@ html {
 }
 
 body {
-    background-image: url(1.png);
     background-color: #f5f5f5;
     -webkit-background-size: cover;    
     height: 100%;
@@ -22,3 +21,27 @@ body {
 * {
     box-sizing: border-box;
 }
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    height: 5rem;
+
+    nav {
+        margin-bottom: 5rem;
+    }
+
+    .header__logo {
+        margin-bottom: 5rem;
+    }
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
