@@ -1,0 +1,119 @@
+.Blog_container {
+    height: 1100px;
+    max-width: 1040px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    display: block;
+    left: 0;
+    right: 0;
+
+}
+
+.Blog_header {
+    position: absolute;
+    background-size: cover;
+    background-image: url(1.png);
+    width:100%;
+    height: 10%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #2eca7f;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Blog-content {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.Blog-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+
+    .item-Blog {
+       height: 32rem;
+       width: 46rem;
+       background-color: white;
+       box-shadow: 1px 1px 4px #888888;
+       position: relative;
+
+       img {
+        height: 69%;
+        width: 100%;
+        position: absolute;
+       }
+
+       .blog-image {
+    
+       }
+
+       .Blog-date {
+           margin-left:87%;
+           position: absolute;
+           margin-top: 3%;
+           background-color: white;
+           padding-top: 1rem;
+           padding-bottom: 0.5rem;
+           padding-left: 1rem;
+           padding-right: 1rem;
+           text-align: center;
+       }
+
+       .Blog-day {
+        color: #2eca7f;
+        font-size: 2rem;
+        font-weight: 600;
+       }
+
+       .Blog-month {
+        color: #2eca7f;
+        font-size: 1.1rem;
+        font-weight: 600;
+       }
+
+       .blog-content {
+           position: relative;
+           top: 70%;
+           text-align: center;
+
+           h5 {
+             font-weight: 400;
+             font-size: 1.1rem;
+             text-align: center;
+             //left: 73%;
+             margin: auto 0;
+             position: relative;
+             color: #9e9e9e;
+             display: block;
+             padding-top: 4%;
+           }
+
+           p{
+               font-size: 1.5rem;
+               font-weight: bold;
+               text-align: center;
+               position: relative;
+               margin: auto 0;
+               display: block;
+               padding-top: 2%;
+               
+           }
+    
+       }
+
+    }
+}
