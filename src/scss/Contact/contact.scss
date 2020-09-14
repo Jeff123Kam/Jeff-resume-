@@ -1,0 +1,54 @@
+.Contact-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.item-contact {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 46rem;
+    height: 50rem;
+
+    h3 {
+        //position: absolute;
+        left: 0;
+        font-size: 2.1rem;
+
+        span {
+            color: #2eca7f;
+        }
+    }
+
+    ul {
+        list-style: none;
+        left: 0;
+        padding-left: 0;
+        
+        li {
+            display: inline-block;
+            margin-right: 2rem;
+            font-size: 1.5rem;
+        }
+
+    }
+}
+
+#map {
+    height: 35%;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    margin-bottom: 5%;
+   }
+
+
+.contact-logo {
+    color: #2eca7f;
+    background-color: #fafafa;;
+    padding: 1rem;
+    border-radius: 50%;
+}

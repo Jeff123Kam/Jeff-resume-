@@ -1,5 +1,5 @@
 .Blog_container {
-    height: 1100px;
+    height: 1250px;
     max-width: 1040px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -51,11 +51,24 @@
        box-shadow: 1px 1px 4px #888888;
        position: relative;
 
+       &:hover {
+        box-shadow: 5px 5px 10px #888888;
+
+        
+
+       }
+
        img {
         height: 69%;
         width: 100%;
         position: absolute;
+
+        &:hover {
+            -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
        }
+
+    }
 
        .blog-image {
     
@@ -117,3 +130,5 @@
 
     }
 }
+
+

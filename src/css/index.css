@@ -369,7 +369,7 @@
   border-bottom-right-radius: 15px; }
 
 .Blog_container {
-  height: 1100px;
+  height: 1250px;
   max-width: 1040px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -415,10 +415,15 @@
     background-color: white;
     box-shadow: 1px 1px 4px #888888;
     position: relative; }
+    .Blog-container .item-Blog:hover {
+      box-shadow: 5px 5px 10px #888888; }
     .Blog-container .item-Blog img {
       height: 69%;
       width: 100%;
       position: absolute; }
+      .Blog-container .item-Blog img:hover {
+        -webkit-filter: brightness(0.8);
+        filter: brightness(0.8); }
     .Blog-container .item-Blog .Blog-date {
       margin-left: 87%;
       position: absolute;
@@ -458,6 +463,47 @@
         margin: auto 0;
         display: block;
         padding-top: 2%; }
+
+.Contact-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative; }
+
+.item-contact {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 46rem;
+  height: 50rem; }
+  .item-contact h3 {
+    left: 0;
+    font-size: 2.1rem; }
+    .item-contact h3 span {
+      color: #2eca7f; }
+  .item-contact ul {
+    list-style: none;
+    left: 0;
+    padding-left: 0; }
+    .item-contact ul li {
+      display: inline-block;
+      margin-right: 2rem;
+      font-size: 1.5rem; }
+
+#map {
+  height: 35%;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  margin-bottom: 5%; }
+
+.contact-logo {
+  color: #2eca7f;
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 50%; }
 
 html {
   font-size: 62.5%; }
