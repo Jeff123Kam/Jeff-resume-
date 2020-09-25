@@ -1,9 +1,22 @@
 .skills {
-    margin-top:4rem;
+    //margin-top:4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
 
     &_word {
         color: #2eca7f;
     }
+}
+
+.item-skills {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 46rem;
+    height: 30rem;
 }
 
 .bar_container {

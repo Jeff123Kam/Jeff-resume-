@@ -156,7 +156,6 @@
 .resume_title1 {
   font-size: 2.1rem;
   color: black;
-  margin-left: 4rem;
   margin-top: 0.1rem; }
 
 .resume_title2 {
@@ -165,12 +164,23 @@
   margin-top: 0.1rem; }
 
 .education {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative; }
+
+.item-resume {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 46rem;
+  height: 50rem; }
 
 .vl {
   height: 14rem;
   border-left: 1px solid #e0e0e0;
-  margin-left: 4rem;
   position: relative; }
 
 .vl2 {
@@ -233,9 +243,20 @@
   z-index: 1; }
 
 .skills {
-  margin-top: 4rem; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative; }
   .skills_word {
     color: #2eca7f; }
+
+.item-skills {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 46rem;
+  height: 30rem; }
 
 .bar_container {
   width: 80%;
