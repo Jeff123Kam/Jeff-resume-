@@ -398,6 +398,7 @@
                             <li>Freelance Available</li>
                           </ul>
                         </div>
+
                         <div class="item-contact">
                           <h3>Contact <span>Form</span></h3>
 
@@ -408,15 +409,19 @@
                           
                           <div class="form-button">
                           <label for="lname"><i class="fas fa-envelope-square"></i></label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                          <input type="text" id="lname" name="lastname" placeholder="Your Email">
                           </div>
                           
-                          <div class="form-button">
+                          <div class="form-text">
                           <label for="subject"><i class="fas fa-comment"></i></label>
                           <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
                           </div>
 
+                          <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+
+                          <div class="submit-button">
                           <input type="submit" value="Submit">
+                          </div>
                         </div>
                      </div>
                 </div>
@@ -440,5 +445,7 @@
 <script defer
 src="https://maps.googleapis.com/maps/api/js?key=xx&callback=initMap">
 </script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </html>

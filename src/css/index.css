@@ -478,11 +478,47 @@
   position: relative;
   width: 46rem;
   height: 50rem; }
-  .item-contact input {
-    width: 95%;
-    margin-bottom: 5rem; }
-  .item-contact textarea {
-    width: 95%; }
+  .item-contact .submit-button {
+    width: 30%;
+    margin-top: 10%; }
+  .item-contact .form-text {
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    position: relative; }
+    .item-contact .form-text textarea {
+      width: 80%;
+      height: 4rem;
+      left: 7%;
+      position: absolute;
+      border: none; }
+      .item-contact .form-text textarea:focus {
+        outline: none;
+        border-bottom: 3px solid grey; }
+    .item-contact .form-text label {
+      background-color: gray;
+      padding: 1rem;
+      width: 7%;
+      top: 0;
+      margin-top: 0;
+      position: absolute; }
+  .item-contact .form-button {
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    position: relative; }
+    .item-contact .form-button label {
+      background-color: gray;
+      padding: 1rem;
+      width: 20%; }
+    .item-contact .form-button input {
+      width: 80%;
+      margin-bottom: 5rem;
+      height: 4rem;
+      border: none; }
+      .item-contact .form-button input:focus {
+        outline: none;
+        border-bottom: 3px solid grey; }
   .item-contact h3 {
     left: 0;
     font-size: 2.1rem; }
@@ -509,9 +545,6 @@
   background-color: #fafafa;
   padding: 1rem;
   border-radius: 50%; }
-
-.form-button {
-  display: inline-block; }
 
 html {
   font-size: 62.5%; }
