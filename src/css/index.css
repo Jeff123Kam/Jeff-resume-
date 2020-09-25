@@ -63,11 +63,17 @@
       margin-right: 3.5rem; }
     .header nav button {
       display: none; }
-    @media screen and (max-width: 430px) {
-      .header nav button {
-        display: block; }
-      .header nav a {
-        display: none; } }
+
+@media all and (max-width: 990px) {
+  .header {
+    background: #2eca7f; }
+    .header__logo {
+      color: white; }
+  button {
+    display: block;
+    margin-right: 1rem; }
+  a {
+    display: none; } }
 
 .icon2 {
   display: inline-block;
