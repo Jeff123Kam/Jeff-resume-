@@ -26,7 +26,9 @@
     .header nav a:hover {
       color: black;
       opacity: 1; }
-    .header nav a::after {
+    .header nav a:focus {
+      color: black; }
+    .header nav a:focus:after {
       content: "";
       height: 0.2rem;
       width: 2.4rem;
@@ -34,7 +36,29 @@
       position: absolute;
       left: calc(50% - 25%);
       bottom: 0;
-      opacity: 1; }
+      visibility: visible;
+      transform: scaleX(1); }
+    .header nav a:hover:after {
+      content: "";
+      height: 0.2rem;
+      width: 2.4rem;
+      background: #2eca7f;
+      position: absolute;
+      left: calc(50% - 25%);
+      bottom: 0;
+      visibility: visible;
+      transform: scaleX(1); }
+    .header nav a:after {
+      content: "";
+      height: 0.2rem;
+      width: 2.4rem;
+      background: #2eca7f;
+      position: absolute;
+      left: calc(50% - 25%);
+      bottom: 0;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: .25s linear; }
     .header nav a:not(:last-child) {
       margin-right: 3.5rem; }
     .header nav button {
@@ -58,9 +82,20 @@
     text-align: center;
     padding-top: 0.7rem; }
 
-.adjust {
-  margin-top: 3rem;
-  margin-left: 5rem; }
+.home-flex {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative; }
+
+.item-home {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 46rem;
+  height: 20rem; }
 
 .info-list {
   display: inline-block;
@@ -117,11 +152,9 @@
       width: 27rem;
       border: 2px solid grey;
       margin-left: 5.5rem;
-      margin-top: 5rem;
-      z-index: 10;
-      display: flex; }
+      z-index: 10; }
     .home-container__page-header__introduction {
-      margin-left: 55%;
+      margin-left: 20%;
       margin-top: 5%;
       color: white; }
       .home-container__page-header__introduction__Name {
@@ -589,7 +622,7 @@ body {
   width: 100%;
   z-index: 10;
   background-color: white;
-  height: 5rem; }
+  height: 6rem; }
   .sticky nav {
     margin-bottom: 5rem; }
   .sticky .header__logo {

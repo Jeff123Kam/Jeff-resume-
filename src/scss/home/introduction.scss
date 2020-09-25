@@ -18,11 +18,22 @@
         
 }
 
-.adjust {
-    margin-top: 3rem;
-    margin-left: 5rem;
+.home-flex {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
 }
 
+.item-home {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 46rem;
+    height: 20rem;
+}
 
 .info-list {
     display: inline-block;
