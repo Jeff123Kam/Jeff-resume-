@@ -109,3 +109,54 @@ function initMap() {
     // The marker, positioned at Uluru
     var marker = new google.maps.Marker({position: uluru, map: map});
   }
+
+// sidebar 
+
+$(document).ready(function(){
+  
+    var sidebar = $(".sidebar");
+    var hamburger = $(".hamburger");
+    var line = $(".fas fa-bars");
+    var menuOpen;
+
+    function openMenu(){
+        sidebar.css("right", "0px");
+        menuOpen = true;
+      }
+    
+      function closeMenu(){
+        sidebar.css("right", "-320px");
+        menuOpen = false;
+      }
+
+      function toggleMenu(){
+        if (menuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      }
+
+      hamburger.on({
+        mouseenter: function(){
+          openMenu();
+        }
+      });
+      
+      sidebar.on({
+        mouseleave: function(){
+          closeMenu();
+        }
+        
+      });
+      
+      hamburger.on({
+        click: function(){
+          toggleMenu();
+        }
+      })
+
+    
+
+     
+});  

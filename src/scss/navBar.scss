@@ -104,7 +104,28 @@
           }
 
           .sidebar {
-              
+                z-index: 4;
+                width: 320px;
+                height: 100%;
+                background: $jiangre-green;
+                position: fixed;
+                top: 5%;
+                right: -320px;
+                transition: left .1s;
+                display: none;
+
+                .sidebar-item {
+                    color: #fff;
+                    width: 100%;
+                    padding: 1rem 3rem;
+                    box-sizing: border-box;
+                    text-align: center;
+                  }
+                  
+          }
+
+          .sidebar--open {
+            right: 0;
           }
 
     }
@@ -140,6 +161,14 @@
     
                     a {
                         display: none;
+                    }
+
+                    .sidebar {
+                        display: block;
+
+                        .sidebar-item {
+                            display: block;
+                        }
                     }
                 }
                 

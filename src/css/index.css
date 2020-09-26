@@ -69,6 +69,24 @@
       font-size: 2rem; }
     .header nav button:focus {
       outline: 0; }
+    .header nav .sidebar {
+      z-index: 4;
+      width: 320px;
+      height: 100%;
+      background: #2eca7f;
+      position: fixed;
+      top: 5%;
+      right: -320px;
+      transition: left .1s;
+      display: none; }
+      .header nav .sidebar .sidebar-item {
+        color: #fff;
+        width: 100%;
+        padding: 1rem 3rem;
+        box-sizing: border-box;
+        text-align: center; }
+    .header nav .sidebar--open {
+      right: 0; }
 
 @media screen and (max-width: 990px) {
   .header {
@@ -85,7 +103,11 @@
       display: block;
       margin-right: 1rem; }
     .header nav a {
-      display: none; } }
+      display: none; }
+    .header nav .sidebar {
+      display: block; }
+      .header nav .sidebar .sidebar-item {
+        display: block; } }
 
 .icon2 {
   display: inline-block;
